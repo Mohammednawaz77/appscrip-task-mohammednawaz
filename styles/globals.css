@@ -1,0 +1,82 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+/* Headings – Responsive & SEO friendly */
+h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: clamp(16px, 2.2vw, 18px);
+  font-weight: 400;
+  line-height: 1.4;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+/* Optional – future proof */
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+/* Layout container */
+.container {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Mobile fine-tuning */
+@media (max-width: 480px) {
+  h1 {
+    margin-bottom: 6px;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+  }
+}
+/* Global link styles – modern & clean */
+a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #555;
+}
+
+/* Navigation specific (optional but recommended) */
+nav a {
+  font-size: 15px;
+  letter-spacing: 0.3px;
+}
+
+/* Active / focus state */
+a:focus {
+  outline: none;
+  color: #000;
+}

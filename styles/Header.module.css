@@ -1,0 +1,46 @@
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icons span {
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.nav {
+  border-top: 1px solid #e5e5e5;
+}
+
+.nav div {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  height: 48px;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+}
